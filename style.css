@@ -1,0 +1,285 @@
+@font-face {
+	font-family: hyundaibold;
+	src: url(fhyundai/HyundaiSansTextOffice-Bold.ttf);
+	font-weight: bolder;
+}
+
+@font-face {
+	font-family: hyundailight;
+	src: url(fhyundai/HyundaiSansHeadOffice-Regular.ttf);
+}
+
+:root {
+	--scondary--color: #cdcdcdaa;
+	--font--color: #002c5f;
+}
+body {
+	font-family: hyundailight !important;
+	overflow-x: hidden;
+	background-color: var(--scondary--color);
+}
+
+* {
+	color: #002c5f;
+}
+.banner {
+	margin-top: 20px;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(aset/banner.jpg);
+	height: 70vh;
+
+	box-sizing: border-box;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: -10vh;
+	background-position-x: -22vh;
+	background-attachment: fixed;
+}
+
+.judul {
+	font-family: hyundaibold;
+	color: #ffffff;
+}
+
+.parallax {
+	height: 70vh;
+}
+
+h1 {
+	font-family: hyundaibold;
+}
+
+/* isi */
+.isi h1 {
+	font-size: 13vh;
+	font-weight: 500;
+	right: -10%;
+	opacity: 0.1;
+	position: relative;
+	animation: safety linear;
+	animation-timeline: view();
+	animation-range: entry 10% cover 100%;
+}
+
+@keyframes safety {
+	0% {
+		right: 25%;
+	}
+	50% {
+		right: 10%;
+	}
+	70% {
+		right: -10%;
+	}
+}
+
+.isi {
+	width: 100%;
+}
+
+.isi p {
+	font-family: hyundailight;
+	text-align: justify;
+	font-size: 20px;
+	opacity: 0;
+	margin-top: -8vh;
+	animation: p linear;
+	animation-timeline: view();
+	animation-range: entry 10% cover 100%;
+}
+
+@keyframes p {
+	0% {
+		opacity: 0.1;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+.carousel {
+	transform: scale(0.7);
+	animation: carosel linear;
+	animation-timeline: view();
+	animation-range: entry 10% cover 100%;
+}
+
+@keyframes carosel {
+	0% {
+		transform: scale(0.7);
+	}
+	50% {
+		transform: scale(1);
+	}
+}
+
+.healthy {
+	background-color: #002c5f;
+	color: #ffffff;
+	border-radius: 15px;
+	padding: 25px !important;
+	animation: p linear;
+	animation-timeline: view();
+	animation-range: entry 10% cover 100%;
+}
+
+.isihealthy {
+	font-family: hyundailight;
+	color: #ffffff;
+	text-align: justify;
+	font-size: 20px;
+	opacity: 0;
+	margin-top: -8vh;
+	animation: p linear;
+	animation-timeline: view();
+	animation-range: entry 10% cover 100%;
+}
+
+.healthy h1 {
+	font-size: 13vh;
+	font-weight: 500;
+	right: -10%;
+	opacity: 0.1;
+	position: relative;
+	animation: safety linear;
+	animation-timeline: view();
+	animation-range: entry 10% cover 100%;
+}
+
+.healthy p {
+	font-family: hyundailight;
+	text-align: justify;
+	font-size: 20px;
+	opacity: 0;
+	color: #ffffff;
+	animation: p linear;
+	animation-timeline: view();
+	animation-range: entry 10% cover 100%;
+}
+
+/* responsibilty */
+.Responsibility {
+	font-family: hyundailight;
+	right: -10%;
+	text-align: justify;
+	font-size: 20px;
+	opacity: 0;
+	margin-top: -8vh;
+	animation: p linear;
+	animation-timeline: view();
+	animation-range: entry 10% cover 100%;
+}
+
+.respon {
+	width: 100vw;
+}
+
+.respon h1 {
+	font-size: 13vh;
+	font-weight: 500;
+	right: -10%;
+	opacity: 0.1;
+	position: relative;
+	animation: safety linear;
+	animation-timeline: view();
+	animation-range: entry 10% cover 100%;
+}
+
+.respon p {
+	font-family: hyundailight;
+	text-align: justify;
+	font-size: 20px;
+	opacity: 0;
+
+	animation: p linear;
+	animation-timeline: view();
+	animation-range: entry 10% cover 100%;
+}
+
+/* evrycoy */
+
+.konten h1 {
+	font-size: 4vh;
+}
+.konten p {
+	color: #ffffff;
+}
+.konten {
+	font-family: hyundailight;
+	font-weight: 500;
+	background-color: #002c5f;
+	color: #ffffff;
+	border-radius: 15px;
+	padding: 25px !important;
+	animation: p linear;
+	animation-timeline: view();
+	animation-range: entry 10% cover 100%;
+}
+
+.konten1 {
+	background-color: #66707c;
+	border-radius: 15px;
+	margin-top: 20px;
+	padding: 25px !important;
+}
+.konten1 .b {
+	font-weight: 700;
+	color: #ffffff !important;
+}
+.konten1 p {
+	color: #ffffff !important;
+}
+#coleps {
+	font-size: 20px !important;
+}
+
+/* btn */
+.btn {
+	border-radius: 10px !important;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+	transition: ease-in-out 0.5s;
+}
+#tutup {
+	display: none;
+}
+
+.accordion {
+	font-family: hyundailight;
+	font-size: 20px;
+	color: #002c5f !important;
+}
+
+footer {
+	background-color: #66707c;
+	margin-top: 50px;
+	padding: 10px;
+}
+
+footer p {
+	color: #ffffff !important;
+	display: flex;
+	justify-content: center;
+	font-size: 15px;
+}
+
+/* responsive design */
+
+@media screen and (min-width: 900px) {
+	.banner {
+		background-position-y: -10vh;
+		background-position-x: -5vh;
+	}
+
+	.isi {
+		width: 100vh !important;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.banner {
+		background-position-y: -10vh;
+		background-position-x: 15vh;
+	}
+}
