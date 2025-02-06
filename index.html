@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="shortcut icon" type="jpg/png" href="aset/logo.png" />
 		<title>Safety Frist</title>
 		<link
@@ -52,7 +53,7 @@
 			</p>
 
 			<!-- carosel -->
-			<div id="carouselExampleCaptions" class="carousel slide">
+			<div data-aos="fade-up" data-aos-duration="1000" id="carouselExampleCaptions" class="carousel slide">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -91,14 +92,14 @@
 
 		<!-- healthy -->
 		<div class="container healthy py-5">
-			<h1>Healthy</h1>
-			<p class="isihealthy">
+			<h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">Healthy</h1>
+			<p data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1000" class="isihealthy">
 				Kesehatan adalah aset tak ternilai yang memengaruhi setiap aspek kehidupan Anda, mulai dari produktivitas kerja, hubungan sosial, hingga kebahagiaan pribadi. Your Health adalah tentang
 				bagaimana Anda mengambil tanggung jawab penuh atas kesejahteraan fisik, mental, dan emosional Anda. Ini bukan hanya tentang menghindari penyakit, tetapi juga tentang menciptakan gaya hidup
 				yang seimbang, berenergi, dan penuh makna.
 			</p>
-			<p class="fs-3">Mengapa Your Health Penting?</p>
-			<p>
+			<p data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1000" class="fs-3">Mengapa Your Health Penting?</p>
+			<p data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1000">
 				Kesehatan yang baik adalah fondasi untuk hidup yang berkualitas. Tanpa kesehatan, semua pencapaian dan kesuksesan menjadi kurang berarti. Dengan menjaga kesehatan, Anda dapat:<br />
 				<br />
 				- Meningkatkan energi dan produktivitas sehari-hari.<br />
@@ -111,15 +112,15 @@
 		<!-- reponsibility -->
 
 		<div class="container respon py-5">
-			<h1>Responsibility</h1>
-			<p class="Responsibility">
+			<h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">Responsibility</h1>
+			<p data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1000" class="Responsibility">
 				Your Responsibility adalah tentang kesadaran bahwa Anda adalah aktor utama dalam kehidupan Anda sendiri. Ini berarti Anda bertanggung jawab atas keputusan, tindakan, dan hasil yang Anda capai.
 				Baik dalam hal kesehatan, keselamatan, karier, atau hubungan, tanggung jawab pribadi adalah kunci untuk menciptakan kehidupan yang lebih baik, baik untuk diri sendiri maupun orang-orang di
 				sekitar Anda.
 			</p>
 
-			<p class="fs-3">Apa Arti Your Responsibility?</p>
-			<p>
+			<p data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1000" class="fs-3">Apa Arti Your Responsibility?</p>
+			<p data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1000">
 				Tanggung jawab pribadi adalah tentang:<br /><br />
 
 				- Mengakui bahwa Anda memiliki kendali atas pilihan dan tindakan Anda.<br />
@@ -129,7 +130,7 @@
 			</p>
 		</div>
 
-		<div class="container konten">
+		<div data-aos="flip-down" data-aos-duration="2000" data-aos-delay="1000" class="container konten">
 			<p class="fs-3 fw-bolder">Berikut adalah beberapa cara agar anda bisa menjaga safety dan kesehatan</p>
 			<h1>
 				Every Choice Counts<br />
@@ -288,6 +289,11 @@
 		<footer>
 			<p>Created By Lutvi Alviansyah</p>
 		</footer>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
