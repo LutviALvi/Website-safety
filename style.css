@@ -95,7 +95,7 @@ h1 {
 	font-family: hyundailight;
 	text-align: justify;
 	font-size: 20px;
-	opacity: 0;
+	opacity: 1;
 	margin-top: -8vh;
 	transition: all 3s ease-in-out;
 }
