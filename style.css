@@ -52,7 +52,8 @@ h1 {
 .isi h1 {
 	font-size: 13vh;
 	font-weight: 500;
-	right: -10%;
+	display: flex;
+	justify-content: center;
 	opacity: 0.1;
 	position: relative;
 	animation: safety linear;
@@ -62,13 +63,12 @@ h1 {
 
 @keyframes safety {
 	0% {
-		right: 25%;
+		opacity: 0;
+		transform: scale(0.1);
 	}
-	50% {
-		right: 10%;
-	}
-	70% {
-		right: -10%;
+	100% {
+		opacity: 0.1;
+		transform: scale(1);
 	}
 }
 
@@ -137,7 +137,8 @@ h1 {
 .healthy h1 {
 	font-size: 13vh;
 	font-weight: 500;
-	right: -10%;
+	display: flex;
+	justify-content: center;
 	opacity: 0.1;
 	position: relative;
 	animation: safety linear;
@@ -159,25 +160,20 @@ h1 {
 /* responsibilty */
 .Responsibility {
 	font-family: hyundailight;
-	right: -10%;
 	text-align: justify;
 	font-size: 20px;
 	opacity: 0;
-	margin-top: -8vh;
+	margin-top: -5vh;
 	animation: p linear;
 	animation-timeline: view();
 	animation-range: entry 10% cover 100%;
 }
-.respon {
-	overflow-x: hidden;
-}
-
-
 
 .respon h1 {
-	font-size: 13vh;
+	font-size: 8vh;
 	font-weight: 500;
-	right: -10%;
+	display: flex;
+	justify-content: center;
 	opacity: 0.1;
 	position: relative;
 	animation: safety linear;
